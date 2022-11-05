@@ -12,6 +12,10 @@
   --bg: url(./assets/bg-yellow.svg);
 }
 
+p {
+  color: white;
+}
+
 body.blue {
   --card-color-primary: #338af3;
   --card-title-border-color: #338af3;
@@ -26,6 +30,32 @@ body.green {
   --card-bg-color: #1a1f1b;
 
   --bg: url(./assets/bg-green.svg);
+}
+
+#dinamic-background-colors {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#dinamic-background-colors p:nth-child(1):hover {
+  color: #047c3f;
+  cursor: pointer;
+}
+
+#dinamic-background-colors p:nth-child(2):hover {
+  color: #27528b;
+  cursor: pointer;
+}
+
+#dinamic-background-colors p:nth-child(3):hover {
+  color: #746615;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  color: white;
 }
 
 ul {

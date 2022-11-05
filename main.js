@@ -27,11 +27,30 @@ function createCard(date, day, games) {
        createCard(
          "28/11",
          "segunda",
-         createGame("brazil", "13:00", "swetizerland") +
-        createGame("portugal", "16:00", "uruguay")
-        
+         createGame("brazil", "13:00", "swetizerland")
        ) +
        createCard("02/12", "sexta", createGame("brazil", "16:00", "cameroon")
        )
     
-  
+  // trocando as cores de fundo dinamicamente
+
+  let fundoAzul = document.querySelector(".bgBlue")
+  let fundoVerde = document.querySelector(".bgGreen")
+  let fundoOriginal = document.querySelector(".bgOriginal")
+  let body = document.querySelector(".green")
+
+  fundoAzul.addEventListener("click", () => {
+    
+    body.classList.remove("green")
+     body.classList.add("blue")
+  })
+
+  fundoVerde.addEventListener("click", () => {
+      body.classList.remove("blue")
+      body.classList.add("green")
+  })
+
+  fundoOriginal.addEventListener("click", () => {
+    body.classList.remove("blue")
+    body.classList.remove("green")
+  })
